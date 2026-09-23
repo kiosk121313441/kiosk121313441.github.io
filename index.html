@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kiosk Zahraa Orient in Willich – seit 2016. Kiosk, Shisha, Tabak, Zubehör, Getränke, Snacks und DPD & GLS Paketshop.">
+<title>Zahraa Orient – Kiosk & Paketshop | Willich</title>
+<style>
+:root{--bg:#08090b;--bg2:#101114;--card:#17181c;--red:#8f111b;--red2:#bd1d29;--red3:#e12b36;--white:#fff;--muted:#bfc0c6;--line:#2a2b31}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(8,9,11,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900}
+.logo{width:54px;height:54px;border-radius:10px;object-fit:cover;border:1px solid #542128;box-shadow:0 5px 18px #000}
+.brand-text{line-height:1.1}.brand-text b{display:block;font-size:1.05rem}.brand-text span{font-size:.72rem;color:#e9aeb2;letter-spacing:.5px}
+.navlinks{display:flex;gap:22px}.navlinks a{color:#ddd;font-size:.94rem}.navlinks a:hover{color:#ff4b55}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 22%,rgba(189,29,41,.25),transparent 38%),linear-gradient(180deg,#160d10,#08090b 78%)}
+.hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:rgba(143,17,27,.12);filter:blur(80px);top:-250px;left:50%;transform:translateX(-50%)}
+.hero-content{position:relative;z-index:1;padding:90px 0;max-width:900px}
+.badge{display:inline-block;padding:8px 15px;border:1px solid #64232a;border-radius:999px;background:#1d0e11;color:#f7e9ea;font-size:.9rem;margin-bottom:20px}
+h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:1.0;letter-spacing:-2px;margin:0 0 22px}
+h1 span{color:#df2934}.hero p{max-width:760px;margin:0 auto 30px;color:var(--muted);font-size:1.16rem}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{padding:14px 22px;border-radius:11px;font-weight:800;border:1px solid var(--line);transition:.2s}.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--red2);border-color:var(--red2)}.secondary{background:#17181c}.light{background:#fff;color:#090a0c;border-color:#fff}
+section{padding:88px 0}.title{text-align:center;margin-bottom:42px}.title h2{font-size:2.25rem;margin:0 0 8px}.title p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#1a1b1f,#111216);border:1px solid var(--line);border-radius:18px;padding:27px;box-shadow:0 12px 35px rgba(0,0,0,.2)}.card:hover{border-color:#68232a}
+.icon{font-size:2rem}.card h3{margin:8px 0}.card p{margin:0;color:var(--muted)}
+.story{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.story-box{background:linear-gradient(145deg,#1b1114,#121316);border:1px solid #482027;border-radius:20px;padding:34px}.story-box h2{margin-top:0;font-size:2rem}.story-box p{color:#d0d0d5}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}.stat{text-align:center;padding:18px;border-radius:14px;background:#101114;border:1px solid var(--line)}.stat b{display:block;font-size:1.5rem}.stat span{color:var(--muted);font-size:.86rem}
+.parcel{background:linear-gradient(135deg,#260f13,#151619);border:1px solid #6a242c;border-radius:20px;padding:36px}.parcel h3{font-size:1.55rem;margin-top:0}.parcel p{color:#d5d5da}.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.tag{padding:8px 12px;border-radius:999px;background:#1c0e10;border:1px solid #5d242b}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:20px}.info-box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.hours{width:100%;border-collapse:collapse}.hours td{padding:9px 0;border-bottom:1px solid var(--line)}.hours td:last-child{text-align:right;font-weight:800}
+.contact{display:grid;gap:13px}.contact a,.contact div{padding:15px;border-radius:12px;background:#111216;border:1px solid var(--line)}.contact small{display:block;color:var(--muted);margin-bottom:2px}
+.notice{margin-top:18px;padding:14px 16px;border-left:3px solid var(--red3);background:#170e10;color:#d9d9de;border-radius:7px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.navlinks{display:none}.grid,.story,.info{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero{min-height:70vh}}
+@media(max-width:500px){.stats{grid-template-columns:1fr}.brand-text span{display:none}.logo{width:48px;height:48px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container"><nav>
+<a class="brand" href="#start">
+<img class="logo" src="zahraa-orient-logo.jpg" alt="Zahraa Orient Logo">
+<span class="brand-text"><b>Zahraa Orient</b><span>Kiosk & Paketshop · Willich</span></span>
+</a>
+<div class="navlinks">
+<a href="#ueber-uns">Über uns</a><a href="#angebot">Angebot</a><a href="#paketshop">Paketshop</a><a href="#kontakt">Kontakt</a>
+</div>
+</nav></div>
+</header>
+
+<main>
+<section class="hero" id="start"><div class="container hero-content">
+<div class="badge">Seit 2016 · Willich · DPD & GLS Paketshop</div>
+<h1>Willkommen bei<br><span>Zahraa Orient</span></h1>
+<p>Dein Kiosk für den täglichen Einkauf – mit langer Öffnungszeit, persönlichem Service und vielen Jahren Erfahrung im Paketgeschäft.</p>
+<div class="buttons">
+<a class="btn primary" href="tel:+4915731292710">📞 0157 31292710</a>
+<a class="btn light" href="#kontakt">📍 Bahnstr. 27, 47877 Willich</a>
+</div>
+</div></section>
+
+<section id="ueber-uns"><div class="container">
+<div class="title"><h2>Seit 2016 für euch da</h2><p>Persönlich, zuverlässig und mit einem offenen Ohr für unsere Kunden.</p></div>
+<div class="story">
+<div class="story-box">
+<h2>Mehr als nur ein Kiosk</h2>
+<p>Seit <strong>2016</strong> sind wir für unsere Kunden in Willich da. Bei uns geht es nicht nur darum, schnell etwas einzukaufen – wir möchten, dass man sich bei uns wohlfühlt.</p>
+<p>Wir sind bekannt dafür, <strong>lange für euch da zu sein</strong>. Unser Kiosk ist grundsätzlich jeden Tag geöffnet; nur in echten Notfällen kann es zu einer Ausnahme kommen. So können unsere Kunden auch dann auf uns zählen, wenn viele andere schon geschlossen haben.</p>
+<p>Unser Team steht für <strong>Respekt, Freundlichkeit, Humor und Teamgeist</strong>. Wir helfen gerne weiter, erklären Dinge in Ruhe und versuchen, für jedes Problem eine passende Lösung zu finden.</p>
+<div class="stats"><div class="stat"><b>2016</b><span>seitdem für euch da</span></div><div class="stat"><b>7 Tage</b><span>die Woche geöffnet</span></div><div class="stat"><b>100%</b><span>persönlicher Service</span></div></div>
+</div>
+<div class="story-box">
+<h2>Unser Anspruch</h2>
+<p>Freundlich bleiben, auch wenn es stressig wird. Respektvoll miteinander umgehen. Gemeinsam als Team arbeiten. Und natürlich darf ein bisschen Humor im Alltag nicht fehlen.</p>
+<p>Gerade beim Paketservice hilft uns unsere langjährige Erfahrung: Wir kennen viele unterschiedliche Abläufe und haben im Laufe der Jahre mit sehr vielen Paket- und Versandsystemen zu tun gehabt.</p>
+<p><strong>Du bist dir bei einem Paket nicht sicher?</strong> Sprich uns einfach an – wir schauen gemeinsam, was möglich ist.</p>
+</div>
+</div></div></section>
+
+<section id="angebot"><div class="container">
+<div class="title"><h2>Unser Angebot</h2><p>Vieles für den täglichen Bedarf – schnell, unkompliziert und persönlich.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🚬</div><h3>Tabak & Zubehör</h3><p>Tabakwaren und passendes Zubehör für deinen Bedarf.</p></div>
+<div class="card"><div class="icon">💨</div><h3>Shisha & Zubehör</h3><p>Shisha, Zubehör und weitere Artikel rund um das Thema.</p></div>
+<div class="card"><div class="icon">🥤</div><h3>Getränke</h3><p>Erfrischungsgetränke, Wasser und vieles mehr.</p></div>
+<div class="card"><div class="icon">🍫</div><h3>Snacks & Süßes</h3><p>Chips, Süßigkeiten und kleine Snacks für zwischendurch.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Guthaben & Aufladungen</h3><p>Ausgewählte Aufladungen und Guthaben direkt bei uns.</p></div>
+<div class="card"><div class="icon">🛒</div><h3>Und mehr</h3><p>Praktische Produkte und kleine Alltagsartikel für den schnellen Einkauf.</p></div>
+</div></div></section>
+
+<section id="paketshop"><div class="container">
+<div class="title"><h2>DPD & GLS Paketshop</h2><p>Jahrelange Erfahrung rund um Pakete und Versand.</p></div>
+<div class="parcel">
+<h3>📦 Paketservice mit Erfahrung</h3>
+<p>Wir sind schon seit vielen Jahren im Paketgeschäft dabei und haben über die Zeit mit sehr vielen unterschiedlichen Paket- und Versandsystemen gearbeitet. Dadurch kennen wir viele Abläufe und können bei Fragen rund um Abholung, Abgabe und Versand häufig schnell weiterhelfen.</p>
+<p>Bei <strong>DPD</strong> und <strong>GLS</strong> sind wir bereits lange dabei. Unser Ziel ist dabei immer: freundlich bleiben, genau hinschauen und gemeinsam mit dem Kunden eine Lösung finden.</p>
+<div class="tags"><span class="tag">DPD</span><span class="tag">GLS</span><span class="tag">Paketannahme</span><span class="tag">Paketabholung</span><span class="tag">Versand</span><span class="tag">Erfahrung seit Jahren</span></div>
+<div class="notice">Hinweis: Welche konkreten Paketleistungen möglich sind, kann je nach Sendung und Versandart variieren.</div>
+</div></div></section>
+
+<section id="kontakt"><div class="container">
+<div class="title"><h2>Kontakt & Öffnungszeiten</h2><p>Fragen? Ruf uns einfach an oder komm vorbei.</p></div>
+<div class="info">
+<div class="info-box"><h3>🕘 Jeden Tag für euch da</h3>
+<table class="hours">
+<tr><td>Montag</td><td>geöffnet</td></tr><tr><td>Dienstag</td><td>geöffnet</td></tr><tr><td>Mittwoch</td><td>geöffnet</td></tr><tr><td>Donnerstag</td><td>geöffnet</td></tr><tr><td>Freitag</td><td>geöffnet</td></tr><tr><td>Samstag</td><td>geöffnet</td></tr><tr><td>Sonntag</td><td>geöffnet</td></tr>
+</table>
+<div class="notice">Wir haben grundsätzlich jeden Tag geöffnet. Nur im Notfall kann es zu einer Ausnahme kommen.</div>
+</div>
+<div class="info-box"><h3>📍 Hier findest du uns</h3>
+<div class="contact">
+<div><small>Adresse</small><strong>Bahnstr. 27<br>47877 Willich</strong></div>
+<a href="tel:+4915731292710"><small>Fragen & Kontakt</small><strong>0157 31292710</strong></a>
+<a href="https://www.google.com/maps/search/?api=1&query=Bahnstrasse+27%2C+47877+Willich" target="_blank" rel="noopener"><small>Anfahrt</small><strong>📍 Google Maps öffnen</strong></a>
+</div>
+</div>
+</div></div></section>
+</main>
+
+<footer><div class="container footer-row"><div>© 2026 Zahraa Orient · Bahnstr. 27 · 47877 Willich</div><div>Seit 2016 · Kiosk & Paketshop</div></div></footer>
+</body></html>
